@@ -89,7 +89,7 @@ const App = () => {
       <div className="pattern" />
       <div className="wrapper">
         <header>
-          <img src="./hero-img.png" alt="" /> {/* Changed from "/hero-img.png" to "./hero-img.png" */}
+          <img src="/hero-img.png" alt="" /> {/* Changed back to absolute path since that's what works */}
           <h1>
             Find <span className="text-gradient">Movies</span> Where You'll
             Enjoy the Hassle

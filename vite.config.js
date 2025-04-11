@@ -5,16 +5,10 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   // Ensure assets are properly handled for Vercel deployment
-  base: './', // Changed from '/' to './' for relative paths
+  base: '/', // Use absolute paths since they work
   build: {
     assetsDir: 'assets',
     // Copy the public directory to the output directory as-is
-    copyPublicDir: true,
-    rollupOptions: {
-      // Ensure proper handling of assets in the build
-      output: {
-        manualChunks: undefined
-      }
-    }
+    copyPublicDir: true
   }
 })

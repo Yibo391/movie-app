@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite' 
-// https://vite.dev/config/
+
 export default defineConfig({
-  plugins: [react(),tailwindcss()],
-  // Add a base configuration that works with most deployment platforms
-  base: './',
+  plugins: [react(), tailwindcss()],
+  // Ensure assets are properly handled
+  base: '/',
+  build: {
+    assetsDir: 'assets',
+    // Copy the public directory to the output directory as-is
+    copyPublicDir: true
+  }
 })

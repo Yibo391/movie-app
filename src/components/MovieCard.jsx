@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
         src={
           movie.poster_path
             ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-            : "../../public/No-Poster (1).png"
+            : "/No-Poster (1).png"
         }
         alt={movie.title}
         className="rounded-lg"
@@ -17,7 +17,7 @@ const MovieCard = ({ movie }) => {
         <h3>{movie.title}</h3>
         <div className="content">
             <div className="rating">
-                <img src="../../public/Vector.svg" alt="" />
+                <img src="/Vector.svg" alt="" />
                 <p>{movie.vote_average?movie.vote_average.toFixed(1):'N/A'}</p>
             </div>
             <span>.</span>

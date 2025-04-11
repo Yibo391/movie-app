@@ -89,7 +89,7 @@ const App = () => {
       <div className="pattern" />
       <div className="wrapper">
         <header>
-          <img src="./hero-img.png" alt="" />
+          <img src="/hero-img.png" alt="" />
           <h1>
             Find <span className="text-gradient">Movies</span> Where You'll
             Enjoy the Hassle

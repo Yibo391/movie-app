@@ -6,7 +6,7 @@ import React from 'react'
   return (
     <div className='search'>
         <div>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
             <input type="text" 
             placeholder='Search for movies, series, and more...' 
             value={searchItem} 
